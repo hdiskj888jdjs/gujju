@@ -1,0 +1,115 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: #ffffff;
+    perspective: 1000px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.animated-text {
+    font-size: 2.5em;
+    color: #00ffcc;
+    text-shadow: 0px 0px 20px #00ffcc, 0px 0px 30px #008080;
+    animation: glow 2s infinite alternate;
+}
+
+/* Bio Section */
+.bio {
+    margin: 30px 0;
+    text-align: center;
+    transform: rotateY(10deg);
+}
+
+.bio p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.highlight {
+    color: #ff00cc;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #ff00cc, 0px 0px 20px #ff33ff;
+}
+
+/* Skills Section */
+.skills {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-card {
+    background: linear-gradient(135deg, #111, #222);
+    color: #00ff99;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    box-shadow: 0 5px 15px rgba(0, 255, 153, 0.4);
+    transform: rotateX(20deg) rotateY(-10deg);
+    animation: float 3s infinite ease-in-out;
+}
+
+/* Contact Section */
+.contact {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 1.1em;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #00ccff;
+    text-shadow: 0px 0px 10px #00ccff, 0px 0px 20px #0099ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    background: #111;
+    color: #999;
+    font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes glow {
+    0% {
+        text-shadow: 0px 0px 20px #00ffcc, 0px 0px 30px #008080;
+    }
+    100% {
+        text-shadow: 0px 0px 30px #00ffcc, 0px 0px 40px #00ffff;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotateX(20deg) rotateY(-10deg);
+    }
+    50% {
+        transform: translateY(-10px) rotateX(20deg) rotateY(-10deg);
+    }
+}
